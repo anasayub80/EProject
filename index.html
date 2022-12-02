@@ -7,114 +7,81 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Boostrap CSS CDN -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- Box Icons -->
   <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-  <!-- Animate JS -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+  <!-- JS -->
   <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="/js/frist.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script type="text/javascript" src="js/dataModel.js"></script>
+  <script type="text/javascript" src="js/code.js"></script>
   <!-- Main CSS -->
   <link rel="stylesheet" href="CSS/style.css">
   <title>HairCare</title>
+  <script>
+    $(function () {
+      $("#navbar").load("../components/navbar.html");
+      $("#footer").load("../components/footer.html");
+    });
+
+  </script>
+
 </head>
 <!-- #BEA5F8 -->
 
-<body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <img src="assets/images/logo_main.png" height="45" width="45" alt="">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse j" id="navbarSupportedContent">
-        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-          <li class="nav-item mx-2">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
 
-          <div class="dropdown">
-            <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Treatments
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Hair Loss</a></li>
-              <li><a class="dropdown-item" href="#">Graying</a></li>
-              <li><a class="dropdown-item" href="#">Hair Growth</a></li>
-              <li><a class="dropdown-item" href="#">Premature Baldness</a></li>
-            </ul>
-          </div>
-          <li class="nav-item mx-2">
-            <a class="nav-link active" id="navA" aria-current="page" href="#">Home Remedies</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link active" id="navA" aria-current="page" href="#">Products</a>
-          </li>
-          <li class="nav-item mx-2">
-            <a class="nav-link active" id="navA" aria-current="page" href="#">Equipments</a>
-          </li>
-        </ul>
+<body class="dark">
+  <div class="mybutton" onclick="theme(body)">
+    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </div>
+  <!-- Nav Bar  -->
+  <div id="navbar"></div>
+  <!-- Nav Bar  -->
 
-      </div>
-    </div>
-  </nav>
   <!-- home page Start -->
-  <div id="cover" class="container-fluid p-0 bg-light text-dark text-center d-block">
-    <div class="bg position-relative align-items-center"> <img src="assets/images/bg-1.jpg" id="mainImage"
-        class="img-fluid" alt=""> <img src="assets/images/logo_main.png" id="logoImage"
-        class="position-absolute animate__animated animate__bounceInUp" alt="">
+  <div id="cover" class="container-fluid p-0 text-center d-block position-relative">
+    <div class="bg position-relative align-items-center"> <img class="inverted" src="assets/images/bg-1.jpg"
+        id="mainImage" class="img-fluid" alt=""> <img class="inverted" src="assets/images/logo_main.png" id="logoImage"
+        class="position-absolute animate__animated animate__bounceInLeft" alt="">
     </div>
     <!-- home page End -->
-    <!-- Hair Care Products Start  -->
-    <div class="container-fluid bg-light text-center d-block">
-      <br>
-      <h1>Hair Care Products</h1>
-      <img src="assets/images/dark_seperator.png" alt="" class="img-fluid">
-      <br>
-      <div class="row d-flex justify-content-center">
-        <div class="card my-3 mx-3" style="width: 18rem;">
-          <img src="assets/images/scrub-shampoo.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">URBAN ALCHEMY</h5>
-            <p class="card-text card-subtitle">SALT SCRUB CLEANSE SHAMPOO</p>
-            <p class="card-text" style="color: #bf9456;font-weight: bold; ">$20.0</p>
-            <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card my-3 mx-3" style="width: 18rem;">
-          <img src="assets/images/conditioner.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CALMING CONDITIONER</h5>
-            <p class="card-text card-subtitle">SO PURE NATURAL BALANCE</p>
-            <p class="card-text" style="color: #bf9456;font-weight: bold; ">$20.0</p>
-            <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card my-3 mx-3" style="width: 18rem;">
-          <img src="assets/images/mask.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">3Deluxe</h5>
-            <p class="card-text card-subtitle">Nutritive Mask</p>
-            <p class="card-text" style="color: #bf9456;font-weight: bold; ">$50.0</p>
-            <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a>
-          </div>
-        </div>
-        <div class="card my-3 mx-3" style="width: 18rem;">
-          <img src="assets/images/shampoo.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Lakmé Teknia</h5>
-            <p class="card-text card-subtitle">SCALP CARE VITAL SHAMPOO/p>
-            <p class="card-text" style="color: #bf9456;font-weight: bold; ">$35.0</p>
-            <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a>
-          </div>
-        </div>
 
+    <!-- Hair Care Products Start  -->
+    <div class="container-fluid productContainer  text-center d-block" id="products">
+      <br>
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <h1>Hair Care Products</h1>
+        </div>
+        <div class="col-4">
+          <button class="seeMore " onclick="window.open('../pages/product.html','_self');">
+            View All </button>
+        </div>
+      </div>
+      <img src="assets/images/dark_seperator.png" class="seprator" alt="" class="img-fluid">
+      <br>
+      <div class="row d-flex justify-content-center" id="cards">
+        <script>
+          callHomeProducts()
+        </script>
       </div>
     </div>
     <!-- Hair Care Products End  -->
     <!-- Quote Area Start  -->
-    <div class="container-fluid bg-dark text-center d-block p-0 text-light">
+    <div class="container-fluid text-center d-block p-0 text-light inverted">
       <div class="quotebg position-relative align-items-center"> <img src="assets/images/hairbg.jpg" id="quoteIMG"
           class="img-fluid p-0" alt="">
         <div class="position-absolute" style="width: 50%;">
@@ -131,83 +98,129 @@
       </div>
     </div>
     <!-- Quote Area END  -->
-    <!-- Hair Care Equipments Start  -->
-    <div class="container-fluid bg-light text-center d-block">
+    <!-- Gallery Start  -->
+    <div class="container-fluid d-block text-center align-content-center" id="gallery">
       <br>
-      <h1>Hair Care Equipments</h1>
-      <img src="assets/images/dark_seperator.png" alt="" class="img-fluid">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <h1>Our Gallery</h1>
+        </div>
+        <div class="col-4">
+        </div>
+      </div>
+      <img src="assets/images/dark_seperator.png" alt="" class="img-fluid seprator">
       <br>
-      <div class="row d-flex justify-content-center">
-        <div class="card my-3 mx-3" style="width: 18rem;">
-          <img src="assets/images/iron.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLOUD NINE Sericite</h5>
-            <p class="card-text card-subtitle">Professional Wide Iron</p>
-            <p class="card-text" style="color: #bf9456;font-weight: bold; ">$20.0</p>
-            <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a>
-          </div>
+      <br>
+      <br>
+      <div class="container-gallery">
+        <div class="popup popup-1">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1627999708572-61ef4a097622?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" />
         </div>
-        <div class="card my-3 mx-3" style="width: 18rem;">
-          <img src="assets/images/dryer.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">CLOUD NINE Sericite</h5>
-            <p class="card-text card-subtitle">Professional Airshot Hair Dryer </p>
-            <p class="card-text" style="color: #bf9456;font-weight: bold; ">$20.0</p>
-            <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a>
-          </div>
+        <div class="popup popup-2">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" />
         </div>
-        <div class="card my-3 mx-3" style="width: 18rem;">
-          <img src="assets/images/diva.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">DIVA</h5>
-            <p class="card-text card-subtitle">MK11 Ceramic & Tourmaline Pink Straightener</p>
-            <p class="card-text" style="color: #bf9456;font-weight: bold; ">$50.0</p>
-            <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a>
-          </div>
+        <div class="popup popup-3">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1618481212093-a0286ef0cc95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" />
         </div>
-        <div class="card my-3 mx-3" style="width: 18rem;">
-          <img src="assets/images/curl.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Hi CURL</h5>
-            <p class="card-text card-subtitle">Hi Curl Ceramic & Tourmaline Curling Iron 19mm</p>
-            <p class="card-text" style="color: #bf9456;font-weight: bold; ">$35.0</p>
-            <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a>
-          </div>
+        <div class="popup popup-4">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1533557188897-ef2bc7257ba3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=884&q=80" />
         </div>
+        <div class="popup popup-5">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1584518969469-c2d99c7760a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" />
+        </div>
+      </div>
+      <br> <br>
+      <div class="container-gallery">
+        <div class="popup popup-1">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1627999708572-61ef4a097622?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" />
+        </div>
+        <div class="popup popup-2">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" />
+        </div>
+        <div class="popup popup-3">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1618481212093-a0286ef0cc95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1476&q=80" />
+        </div>
+        <div class="popup popup-4">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1533557188897-ef2bc7257ba3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=884&q=80" />
+        </div>
+        <div class="popup popup-5">
+          <img class="img-responsive" alt="Pop Up Gallety"
+            src="https://images.unsplash.com/photo-1584518969469-c2d99c7760a0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=880&q=80" />
+        </div>
+      </div>
+    </div>
 
+    <!-- Gallery End  -->
+    <!-- Hair Care Equipments Start  -->
+    <div class="container-fluid productContainer  text-center d-block" id="equipments">
+      <br>
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <h1>Hair Care Equipments</h1>
+        </div>
+        <div class="col-4">
+          <button class="seeMore" onclick="window.open('../pages/equipments.html','_self');"> View All </button>
+        </div>
+      </div>
+      <img src="../assets/images/dark_seperator.png" alt="" class="img-fluid seprator"> <br>
+      <br>
+      <div class="row d-flex justify-content-center" id="equipment-home-cards">
+        <script>
+          callHomeEquipments()
+        </script>
       </div>
     </div>
     <!-- Hair Care Equipments End  -->
 
     <!-- Hair Home Remedies Start  -->
-    <div class="container-fluid text-center d-block">
+    <div class="container-fluid text-center d-block " id="remedies">
       <br>
-      <h1>Home Remedies</h1>
-      <img src="assets/images/dark_seperator.png" alt="" class="img-fluid">
+      <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+          <h1>Home Remedies</h1>
+        </div>
+        <div class="col-4">
+          <button class="seeMore">Read All</button>
+        </div>
+      </div>
+      <img src="assets/images/dark_seperator.png" alt="" class="img-fluid seprator">
       <br>
       <div class="row d-flex justify-content-center">
-        <div class="card post-card my-3 mx-3 p-0">
-          <img class="card-img-top img-responsive" src="assets/images/post1.png" alt="Card image cap"
+        <div class="card post-card my-3 mx-3 p-0" onclick="window.open('../pages/remediesread.html','_self');">
+          <img class="card-img-top img-responsive" src="assets/images/post1.png" alt="card image cap"
             title="How To Get Silky And Bouncy Hair In Summer?">
-          <div class="card">
+          <div class="card-body">
             <h4 class="card-title p-2">How To Get Silky And Bouncy Hair In Summer?</h4>
-            <p class="card-text">Don’t let the heat bring you down – follow some simple tips to get luscious hair..</p>
+            <p class="card-text">Don’t let the heat bring you down – follow some simple tips to get luscious hair..
+            </p>
             <p class="card-text" style="color: #bf9456;"><small>Last updated 3 mins ago</small></p>
           </div>
         </div>
         <div class="card post-card my-3 mx-3 p-0">
-          <img class="card-img-top img-responsive" src="assets/images/p2.png" alt="Card image cap"
+          <img class="card-img-top img-responsive" src="assets/images/p2.png" alt="card image cap"
             title="Home Remedies For An Itchy Scalp">
-          <div class="card">
+          <div class="card-body">
             <h4 class="card-title p-2">Home Remedies For An Itchy Scalp</h4>
             <p class="card-text">Remedies that work instantly and help relieve itching before it worsens..</p>
             <p class="card-text" style="color: #bf9456;"><small>Last updated 15 mins ago</small></p>
           </div>
         </div>
         <div class="card post-card my-3 mx-3 p-0">
-          <img class="card-img-top img-responsive" src="assets/images/post3.png" alt="Card image cap"
+          <img class="card-img-top img-responsive" src="assets/images/post3.png" alt="card image cap"
             title="Home Remedies For An Itchy Scalp">
-          <div class="card">
+          <div class="card-body">
             <h4 class="card-title p-2">How To Get Rid Of Head Lice Using Olive Oil</h4>
             <p class="card-text">Understand how this oil may help you remove head lice at home effectively...</p>
             <p class="card-text" style="color: #bf9456;"><small>Last updated 30 mins ago</small></p>
@@ -215,15 +228,14 @@
         </div>
       </div>
     </div>
+    <br>
     <!-- Hair Home Remedies END -->
     <!-- Footer -->
-    <div class="container-fluid">
-      <br>
-      <h1>FOoter</h1>
-      <img src="assets/images/dark_seperator.png" alt="" class="img-fluid">
-      <br>
-    </div>
+    <div id="footer"></div>
     <!-- Footer -->
 </body>
+<script>
+  savedTheme(document.body)
+</script>
 
 </html>

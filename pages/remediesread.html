@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap CSS CDN -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <!-- JS -->
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript" src="../js/dataModel.js"></script>
+    <script type="text/javascript" src="../js/code.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        });
+    </script>
+    <title>Home Remedies</title>
+</head>
+<script>
+    // Define the string
+    var decodedStringBtoA = 'PGgxPiBIb3cgVG8gR2V0IFNpbGt5IEFuZCBCb3VuY3kgSGFpciBJbiBTdW1tZXI/PC9oMT4KPGg2PkRvbiZyc3F1bzt0IGxldCB0aGUgaGVhdCBicmluZyB5b3UgZG93biAmbmRhc2g7IGZvbGxvdyBzb21lIHNpbXBsZSB0aXBzIHRvIGdldCBsdXNjaW91cyBoYWlyLjwvaDY+CjxwPjxpbWcgc3JjPSIuLi9hc3NldHMvaW1hZ2VzL3Bvc3QxLnBuZyIgYWx0PSIiIHNyY3NldD0iIj48L3A+CjxwPjxicj48L3A+CjxoND5FdmVyeW9uZSBkcmVhbXMgb2YgYSBkaXZhIG1vbWVudCB3aGlsZSByb2NraW5nIHNpbGt5IGFuZCBib3VuY3kgaGFpciBpbiBzdW1tZXIuPC9oND4KPHA+RnJvbSBzcG9ydGluZyB0cmVuZHkgYW5kIHNleHkgZGF5LWRyZXNzZXMgdG8gd2VhcmluZyBjb2xvcmZ1bCBtYWtldXAsIHRoZSBzdW1tZXIgdmliZSBpcyBhbGwgYWJvdXQgdGhhdCBmcmVlZG9tIHRvIGV4cGVyaW1lbnQgd2l0aCBldmVyeXRoaW5nLjxicj5Ib3dldmVyLCBpdCBpcyBpbXBvcnRhbnQgdG8gc3RvcCB0aGUgZ2xhcmluZyBzdW5saWdodCBhbmQgcG9sbHV0YW50cyBmcm9tIGluZHVjaW5nIHN3ZWF0IG9uIHlvdXIgc2NhbHAgYW5kIGRhbWFnaW5nIGhhaXIgZm9sbGljbGVzLiBGb2xsb3cgdGhlIHRpcHMgYmVsb3cgZm9yIGxpdmVseSBhbmQgaGVhbHRoeSB0cmVzc2VzLiBLZWVwIHNjcm9sbGluZyE8L3A+CjxoMz5JbiBUaGlzIEFydGljbGU8L2gzPgo8dWw+CiAgICA8bGk+UmVndWxhciBFeHBvc3VyZSB0byB0aGUgU3VuIGNhbiBDYXVzZTo8L2xpPgogICAgPGxpPkhvdyB0byBHZXQgQm91bmN5IEhhaXIgaW4gU3VtbWVyPzwvbGk+CiAgICA8bGk+VGlwcyB0byBBZGQgU2hpbmUgYW5kIEJvdW5jZSBJbnN0YW50bHk6PC9saT4KPC91bD4KPGgzPlJlZ3VsYXIgRXhwb3N1cmUgdG8gdGhlIFN1biBjYW4gQ2F1c2U6PC9oMz4KPHVsPgogICAgPGxpPkRyeSBhbmQgYnJpdHRsZSBoYWlyPC9saT4KICAgIDxsaT5MYWNrIG9mIHNoaW5lPC9saT4KICAgIDxsaT5MaW1wIGhhaXI8L2xpPgogICAgPGxpPkZhZGVkIGhhaXIgY29sb3VyPC9saT4KICAgIDxsaT5TcGxpdCBlbmRzPC9saT4KPC91bD4KPGgyPkhvdyB0byBHZXQgQm91bmN5IEhhaXIgaW4gU3VtbWVyPzwvaDI+CjxoMz4xLiBPaWxpbmcgeW91ciBIYWlyOjwvaDM+CjxwPjxpbWcgc3JjPSJodHRwczovL2NkbjIuc3R5bGVjcmF6ZS5jb20vd3AtY29udGVudC91cGxvYWRzLzIwMTIvMDUvb2lsaW5nLXlvdXItaGFpci5qcGcud2VicCIgYWx0PSIiIHNyY3NldD0iIj48L3A+CjxwPk9pbGluZyBpcyBhIGdyZWF0IHdheSB0byBjdXJlIG1vc3Qgb2YgeW91ciBoYWlyIHByb2JsZW1zLiBXaGF0ZXZlciB0aGUgaGFpciBwcm9ibGVtIGlzLCBvaWxpbmcgaXMgYSBncmVhdCB3YXkgdG8gYWJhdGUgdGhlIGNvbmRpdGlvbi48YnI+QXBwbHkgY29jb251dCwgYWxtb25kIG9yIG9saXZlIG9pbCBvbiB5b3VyIGhhaXIgb3Zlcm5pZ2h0IGFuZCB3YXNoIGl0IHRoZSBuZXh0IG1vcm5pbmcuIElmIHBvc3NpYmxlLCBhdm9pZCBzaGFtcG9vIGFuZCBsZXQgaXQgc3RheSBmb3IgYSBkYXkuPC9wPgo8aDM+Mi4gS2VlcCB5b3VyIEhhaXIgQ2xlYW46PC9oMz4KPHA+PGltZyBzcmM9Imh0dHBzOi8vaW1hZ2VzLnVuc3BsYXNoLmNvbS9waG90by0xNTgxMzE4Njk0NTQ4LTBmYjZlNDdmZTU5Yj9peGxpYj1yYi00LjAuMyZpeGlkPU1ud3hNakEzZkRCOE1IeHdhRzkwYnkxd1lXZGxmSHg4ZkdWdWZEQjhmSHg4JmF1dG89Zm9ybWF0JmZpdD1jcm9wJnc9ODgwJnE9ODAiIGhlaWdodD0iMTMlIiBhbHQ9IiIgc3Jjc2V0PSIiPjwvcD4KPHA+PGJyPjwvcD4KPGg0PlRoZSBzdW4sIHN3ZWF0IGFuZCBkaXJ0IHdvcmsgYWdhaW5zdCB5b3VyIGhhaXIgZHVyaW5nIHRoZSBzdW1tZXJzLjwvaDQ+CjxwPk1ha2Ugc3VyZSB5b3Ugc2hhbXBvbyB5b3VyIGhhaXIgYWJvdXQgdHdpY2UgYSB3ZWVrIHRvIHJlbW92ZSBhbGwgdGhlIGdyZWFzaW5lc3MuIEF2b2lkIHRvbyBtdWNoIHNoYW1wb28gYXMgaXQgY2FuIGRyeSB5b3VyIGhhaXIgb3V0LiBVc2UgYSBjb25kaXRpb25lciB3aGVuZXZlciB5b3UgY2FuIGF2b2lkIHNoYW1wb28uPC9wPgo8aDM+My4gSG9tZW1hZGUgSGFpciBQYWNrczo8L2gzPgo8cD48aW1nIHNyYz0iaHR0cHM6Ly9jZG4yLnN0eWxlY3JhemUuY29tL3dwLWNvbnRlbnQvdXBsb2Fkcy8yMDEyLzA1L2hvbWVtYWRlLWhhaXItcGFja3MuanBnLndlYnAiIGhlaWdodD0iMTMlIiBhbHQ9IiIgc3Jjc2V0PSIiPjwvcD4KPHA+PGJyPjwvcD4KPGg0Pkp1c3QgbGlrZSB5b3VyIHNraW4sIHlvdXIgaGFpciBhbHNvIG5lZWRzIHNvbWUgZXh0cmEgY2FyZSB0byBjb21iYXQgdGhlIGlsbCBlZmZlY3RzIG9mIHRoZSB3ZWF0aGVyLjwvaDQ+CjxwPkdvIGluIGZvciBhIGhhaXIgcGFjayB0byBnaXZlIHlvdXIgaGFpciBzb21lIG11Y2ggbmVlZGVkIHBhbXBlcmluZyBhbmQgY2FyZS4gVXNlIGEgaG9tZW1hZGUgcGFjayB0byBhZGQgdGhhdCBleHRyYSBzaGluZSBhbmQgYm91bmNlIHRvIHlvdXIgaGFpci4gQWx0ZXJuYXRpdmVseSwgeW91IGNhbiB1c2UgYW4gaGVyYmFsIHBhY2sgb3Igb25lIHRoYXQgaXMgbWFkZSBvZiBuYXR1cmFsIGluZ3JlZGllbnRzLiBFZ2csIGhvbmV5LCBtYXlvbm5haXNlIGFuZCB5b2d1cnQgYXJlIGVzcGVjaWFsbHkgZ29vZCBmb3IgdGhlIGhhaXIuPC9wPgo8aDM+NC4gTnV0cml0aW91cyBhbmQgSGVhbHRoeSBFYXRpbmc6PC9oMz4KPHA+PGltZyBzcmM9Imh0dHBzOi8vY2RuMi5zdHlsZWNyYXplLmNvbS93cC1jb250ZW50L3VwbG9hZHMvMjAxMi8wNS9udXRyaXRpb3VzLWhlYWx0aHktZWF0aW5nLmpwZy53ZWJwIiBoZWlnaHQ9IjEzJSIgYWx0PSIiIHNyY3NldD0iIj48L3A+CjxwPjxicj48L3A+CjxoND5PdXIgZWF0aW5nIGhhYml0cyBtYWtlIGEgYmlnIGltcGFjdCBvbiB0aGUgY29uZGl0aW9uIG9mIG91ciBoYWlyLjwvaDQ+CjxwPkEgYmFsYW5jZWQgZGlldCBvZiBmcnVpdHMgYW5kIHZlZ2V0YWJsZXMgaXMgdmVyeSBpbXBvcnRhbnQgZm9yIHRoZSBudXRyaXRpb24gaXQgcHJvdmlkZXMgeW91ciBoYWlyLiBJbmNsdWRlIGFsbW9uZHMsIHNveWFiZWFuLCBmbGF4IHNlZWRzLCBtaWxrIGFuZCBtaWxrIHByb2R1Y3RzLCBjaGlja3BlYXMgYW5kIHRvbWF0b2VzIGluIHlvdXIgZGlldC4gSWYgeW91IGVhdCBtZWF0IG9yIGVnZ3MsIG1ha2UgaXQgYSBwYXJ0IG9mIHlvdXIgcmVndWxhciBkaWV0LiBZb3Ugd2lsbCBubyBkb3VidCBnYWluIHRoZSBzdW1tZXIgYm91bmN5IGhhaXIhPC9wPgo8YnI+Cjxicj4=';
+    // Encode the String
+    var decode = atob(decodedStringBtoA);
+    window.onload = function () {
+        document.getElementById('mainArticle').innerHTML = decode;
+    }
+</script>
+<style>
+    ul {
+        color: #bf9456;
+    }
+
+    #mainArticle img {
+        max-width: 45%;
+        max-height: 45%;
+    }
+</style>
+
+<body class="dark">
+    <div class="mybutton" onclick="theme(body)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-sun">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </div>
+    <!-- Nav bar  -->
+    <div id="navbar"></div>
+    <!-- x-x-x Nav bar x-x-x -->
+    <br>
+    <br>
+    <!-- home page Start -->
+    <div id="fullCover" class="container-fluid px-0 my-15  d-block">
+        <div class="row">
+            <!-- left side  -->
+            <div class="col-3"></div>
+            <!-- main article  -->
+            <div class="col-6 m-0 p-0" id="mainArticle">
+                <br> <br>
+            </div>
+            <!-- main article  -->
+            <!-- right side articles  -->
+            <div class="col-3 ms-auto mr-auto p-0">
+                <h3>RELATED ARTICLES</h3>
+                <div class="container p-0 mx-0 my-1 card card-bg" style="width: 80%;height: 75px;overflow: hidden;">
+                    <div class="row">
+                        <div class="col-3 p-0 m-0" style="background-color: purple;">
+                            <figure>
+                                <img src="../assets/images/p2.png" class="" height="75px" width="100%" alt="" srcset="">
+                            </figure>
+                        </div>
+                        <div class="col-9">
+                            <a>Home Remedies For An Itchy Scalp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container p-0 mx-0 my-1 card card-bg" style="width: 80%;height: 75px;overflow: hidden;">
+                    <div class="row">
+                        <div class="col-3 p-0 m-0" style="background-color: purple;">
+                            <figure>
+                                <img src="../assets/images/post3.png" class="" height="75px" width="100%" alt=""
+                                    srcset="">
+                            </figure>
+                        </div>
+                        <div class="col-9">
+                            <a>How To Get Rid Of Head Lice Using Olive Oil</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container p-0 mx-0 my-1 card card-bg" style="width: 80%;height: 75px;overflow: hidden;">
+                    <div class="row">
+                        <div class="col-3 p-0 m-0" style="background-color: purple;">
+                            <figure>
+                                <img src="../assets/images/p2.png" class="" height="75px" width="100%" alt="" srcset="">
+                            </figure>
+                        </div>
+                        <div class="col-9">
+                            <a>Home Remedies For An Itchy Scalp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="container p-0 mx-0 my-1 card card-bg" style="width: 80%;height: 75px;overflow: hidden;">
+                    <div class="row">
+                        <div class="col-3 p-0 m-0" style="background-color: purple;">
+                            <figure>
+                                <img src="../assets/images/post3.png" class="" height="75px" width="100%" alt=""
+                                    srcset="">
+                            </figure>
+                        </div>
+                        <div class="col-9">
+                            <a>How To Get Rid Of Head Lice Using Olive Oil</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!-- home page End -->
+    <!-- Product Area  -->
+
+    <!-- Footer -->
+    <div id="footer"></div>
+    <!-- Footer -->
+</body>
+
+</html>
