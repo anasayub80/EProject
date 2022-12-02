@@ -4,14 +4,97 @@
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
-    background: #FFF7F5;
+    /* background: #FFF7F5; */
  }
 #cover{
+    position: relative;
     width: 100%;
-     height: 93vh;
+    height: 93vh;
+    display: block;
+    overflow: visible;
+    max-width: none !important;
 }
+.bg{
+     background:black; 
+     display: flex; 
+     justify-content:center; 
+     height: 93vh;
+     width: 100%;
+}
+#mainImage{
+     opacity: 0.4;
+     height: 93vh;
+     width: 100%;
+}
+#logoImage{
+    position: absolute; 
+    height: 45vh;
+ }
+ #navA{
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+ #navA:hover{
+    border: 1px solid black;
+    background: white;
+    border-radius: 16px;
+  }
 
-#mainRow{
+  /* <!-- Quote Area Start  --> */
+#quoteIMG{
+    opacity: 0.4;
+    height: 53vh;
+    width: 100%;
+}
+.quotebg{
+        background:black; 
+        display: flex; 
+        justify-content:center; 
+        height: 53vh;
+        width: 100%;
+}
+@media only screen and (max-width: 767px) {
+
+   /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
+    @media screen and (min-width: 601px) {
+    .quote {
+      font-size: 30px;
+    }
+  }
+  
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+     @media screen and (max-width: 600px) {
+    .quote {
+      font-size: 20px;
+    }
+  }
+
+ }
+ /* Quote Area End  */
+
+/* Product Cards  */
+.card{
+    background: #ece8de;
+}
+.card-subtitle{
+    font-size:14px;
+    overflow: hidden;
+}
+.card-img, .card-img-top{
     height: -webkit-fill-available;
 }
- 
+
+/* Home Remedies   */
+.post-card{
+    width: 25rem; height: 30vh;
+}
+.post-card:hover{
+    transition: all .7s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

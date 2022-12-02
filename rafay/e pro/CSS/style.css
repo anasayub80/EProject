@@ -1,0 +1,105 @@
+
+ .banner-image {
+    background-size: cover;
+
+background-color: rgb(245, 245, 245);
+opacity: 0.9;
+  }
+
+  #nav-item2{
+margin-right: 700px;
+
+}
+#nav-item1{
+
+margin-right: 40px;
+    margin-left: 70px;
+}
+#nav-item3{
+
+   margin-right: 40px;
+        
+    }
+    #nav-item4{
+
+        margin-right: -90px;
+             
+         }
+
+  .navbar-nav{
+margin-top: 16px;
+font-size: 1.9rem;
+  }
+
+.bg{
+background-color: black;
+}
+  #image-nav-main{
+opacity: 0.2;
+  }
+
+  #nav-bar-ab{
+color: black;
+position: absolute;
+margin-bottom: -100px;
+  }
+  #main-logo{
+position: absolute;
+margin-left: 600px;
+margin-top: 40px;
+  }
+
+  #snd-logo{
+margin-top: 300px;
+margin-left: 525px;
+position: absolute;
+animation-name:logo-ani ;
+animation-duration: 0.4s ;
+animation-iteration-count: 1;
+  }
+
+
+  @keyframes logo-ani {
+    0%   { 
+    left:80px ;
+    
+  opacity: 20%;
+}
+
+
+    25%  
+    {
+      left:60px ; 
+      opacity: 40%;
+    }
+
+      50% 
+       { 
+
+        opacity: 60%;
+
+        left:40px ;
+        }
+
+
+
+    75%  
+    { 
+      left:20px ;
+      opacity: 80%;
+      }
+
+      
+
+       100% {
+        left:0px ;
+        opacity: 1001%;
+         }
+
+
+  }
+
+
+
+
+
