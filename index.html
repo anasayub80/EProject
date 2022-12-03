@@ -192,40 +192,15 @@
           <h1>Home Remedies</h1>
         </div>
         <div class="col-4">
-          <button class="seeMore">Read All</button>
+          <button class="seeMore" onclick="window.open('../pages/remedies.html','_self');">Read All</button>
         </div>
       </div>
       <img src="assets/images/dark_seperator.png" alt="" class="img-fluid seprator">
       <br>
-      <div class="row d-flex justify-content-center">
-        <div class="card post-card my-3 mx-3 p-0" onclick="window.open('../pages/remediesread.html','_self');">
-          <img class="card-img-top img-responsive" src="assets/images/post1.png" alt="card image cap"
-            title="How To Get Silky And Bouncy Hair In Summer?">
-          <div class="card-body">
-            <h4 class="card-title p-2">How To Get Silky And Bouncy Hair In Summer?</h4>
-            <p class="card-text">Don’t let the heat bring you down – follow some simple tips to get luscious hair..
-            </p>
-            <p class="card-text" style="color: #bf9456;"><small>Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card post-card my-3 mx-3 p-0">
-          <img class="card-img-top img-responsive" src="assets/images/p2.png" alt="card image cap"
-            title="Home Remedies For An Itchy Scalp">
-          <div class="card-body">
-            <h4 class="card-title p-2">Home Remedies For An Itchy Scalp</h4>
-            <p class="card-text">Remedies that work instantly and help relieve itching before it worsens..</p>
-            <p class="card-text" style="color: #bf9456;"><small>Last updated 15 mins ago</small></p>
-          </div>
-        </div>
-        <div class="card post-card my-3 mx-3 p-0">
-          <img class="card-img-top img-responsive" src="assets/images/post3.png" alt="card image cap"
-            title="Home Remedies For An Itchy Scalp">
-          <div class="card-body">
-            <h4 class="card-title p-2">How To Get Rid Of Head Lice Using Olive Oil</h4>
-            <p class="card-text">Understand how this oil may help you remove head lice at home effectively...</p>
-            <p class="card-text" style="color: #bf9456;"><small>Last updated 30 mins ago</small></p>
-          </div>
-        </div>
+      <div class="row d-flex justify-content-center" id="remedies-home-cards">
+        <script>
+          callHomeremedies()
+        </script>
       </div>
     </div>
     <br>

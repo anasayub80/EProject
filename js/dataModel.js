@@ -196,3 +196,57 @@ var equipments = [
      },
     
  ]
+
+var remedies = [ 
+    { 
+     "id": 0,
+     "title" : 'How To Get Silky And Bouncy Hair In Summer?',
+     "smallDesc": 'Don’t let the heat bring you down – follow some simple tips to get luscious hair..',
+     "lastUpdate" : "Last updated 3 mins ago",
+     "image":   '../assets/images/post1.png',
+     "encodedHTMLArticlecontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+     },
+    { 
+     "id": 1,
+     "title" : 'Home Remedies For An Itchy Scalp',
+     "smallDesc": 'Remedies that work instantly and help relieve itching before it worsens..',
+     "lastUpdate" : "Last updated 30 mins ago",
+     "image":   '../assets/images/p2.png',
+     "encodedHTMLArticlecontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+     },
+    { 
+     "id": 2,
+     "title" : 'How To Get Rid Of Head Lice Using Olive Oil',
+     "smallDesc": 'Understand how this oil may help you remove head lice at home effectively...',
+     "lastUpdate" : "Last updated 1 hr ago",
+     "image":   '../assets/images/post3.png',
+     "encodedHTMLArticlecontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+     },
+    { 
+     "id": 3,
+     "title" : 'How To Get Silky And Bouncy Hair In Summer?',
+     "smallDesc": 'Don’t let the heat bring you down – follow some simple tips to get luscious hair..',
+     "lastUpdate" : "Last updated 3 mins ago",
+     "image":   '../assets/images/post1.png',
+     "encodedHTMLArticlecontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+     },
+    { 
+     "id": 4,
+     "title" : 'Home Remedies For An Itchy Scalp',
+     "smallDesc": 'Remedies that work instantly and help relieve itching before it worsens..',
+     "lastUpdate" : "Last updated 30 mins ago",
+     "image":   '../assets/images/p2.png',
+     "encodedHTMLArticlecontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+     },
+    { 
+     "id": 5,
+     "title" : 'How To Get Rid Of Head Lice Using Olive Oil',
+     "smallDesc": 'Understand how this oil may help you remove head lice at home effectively...',
+     "lastUpdate" : "Last updated 1 hr ago",
+     "image":   '../assets/images/post3.png',
+     "encodedHTMLArticlecontent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+     },
+   
+ ]
+
+ 

@@ -964,3 +964,28 @@ color: #ff5e14;
 font-size: 14px;
 color: #878787;
 }
+/* Accordion */
+.accordion-body {
+  color: var(--text-color);
+  background: var(--card-color);
+}
+.accordion-header > .accordion-button{
+  color: var(--text-color);
+  background: var(--card-color);
+}
+.accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url('../assets/images/down-arrow.png');
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: url('../assets/images/down-arrow.png');
+  transform: rotate(-180deg);
+}
+.accordion-button:not(.collapsed) {
+  color: var(--text-color);
+  background-color: var(--card-color);
+}
