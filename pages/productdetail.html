@@ -29,6 +29,29 @@
     <title>Document</title>
 
 </head>
+<script>
+    window.onload = function () {
+        var url = document.location.href,
+            params = url.split('?')[1].split('&'),
+            data = {}, tmp;
+        for (var i = 0, l = params.length; i < l; i++) {
+            tmp = params[i].split('=');
+            data[tmp[0]] = tmp[1];
+        }
+        var imageContainer = document.querySelector(".imageContainer");
+        var mainContiner = document.querySelector(".mainContainer");
+        var productImage = ' <img src="' + products[data.id].image + '" height="500" width="400" alt="">';
+        imageContainer.innerHTML = productImage;
+        var title = '<h1>' + products[data.id].name + '</h1>'
+        var smallDesc = '<h6 style="color: #bf9456;">' + products[data.id].smallDesc + '</h6>'
+        var accordion = '<div class="accordion" id="accordionExample"> </div>'
+        var accordionOne = accordion.innerHTML = '<div class="accordion-item"> <h2 class="accordion-header" id="headingOne"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"> PRODUCT INFORMATION </button> </h2> <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> ' + products[data.id].longDesc + ' </div> </div> </div> </div>'
+        var accordionTwo = accordion.innerHTML = '<div class="accordion-item"> <h2 class="accordion-header" id="flush-headingTwo"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> HOW TO USE </button> </h2> <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample"> <div class="accordion-body"> ' + products[data.id].howtouse + '  </div> </div> </div>'
+        mainContiner.innerHTML = '' + title + '' + smallDesc + accordionOne + accordionTwo + ''
+    }
+
+
+</script>
 
 <body class="dark">
     <div class="mybutton" onclick="theme(body)">
@@ -54,85 +77,15 @@
     <div class="container-fluid p-0 d-block my-15">
         <div class="row">
             <div class="col-2"></div>
-            <div class="col-4 text-center">
-                <img src="../assets/images/dryer.png" height="500" width="400" alt="">
+            <div class="col-4 text-center imageContainer">
+                <!-- Product Image Will Be Display Here  -->
             </div>
-            <div class="col-4">
-                <h1>CLOUD NINE Sericite</h1>
-                <h5>Professional Airshot Hair Dryer</h5>
-                <h6 style="color: #bf9456;">$23.0</h6>
-                <p>The Alchemy Airshot Hair Dryer offers sleek styling and vitamin-infused ceramic heating to diminish
-                    frizz and enhance shine. Achieve exceptional, long-lasting results that are kind on the hair with
-                    CLOUD NINE.</p>
-                <br>
+            <div class="col-4 mainContainer">
+                <!-- 
+        
                 <div class="accordion" id="accordionExample">
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseOne" aria-expanded="false"
-                                aria-controls="flush-collapseOne">
-                                PRODUCT INFORMATION
-                            </button>
-                        </h2>
-                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-
-                            <div class="accordion-body">
-                                <ul>
-                                    <li>2000W high airflow professional blow-dryer</li>
-                                    <li>Tourmaline and vitamin-infused ceramic heating to protect and care for hair</li>
-                                    <li>Anti-static technology diminishes frizz and flyaways</li>
-                                    <li>Cool Shot button allows for rapid cooling and style setting</li>
-                                    <li>3 heat settings and an LED temperature indicator</li>
-                                    <li>Lightweight and ergonomically designed to reduce wrist pressure</li>
-                                    <li>Comes with 2 nozzles</li>
-                                </ul>
-                                <p>The recommended retail price (RRP) for this item is $240.00.</p>
-                                <p>Offering sleek styling with a 2000W high airflow, the CLOUD NINE Alchemy Airshot Hair
-                                    Dryer creates a variety of finishes with an ergonomic design that reduces wrist
-                                    pressure and fatigue. This powerhouse blow-dryer features tourmaline and
-                                    vitamin-infused ceramic heating elements which delivers a premium level of care and
-                                    protection to the hair whilst styling. Anti-static technology minimises the amount
-                                    of negatively charged particles, diminishing frizz and flyaways while adding a
-                                    glossy shine. With three heat settings, an LED temperature indicator and balanced
-                                    weight distribution, the Airshot offers a personalised styling experience based on
-                                    the concerns of each hair type for an enhanced finish. A Cool Shot button rapidly
-                                    cools and sets the style for a longer lasting result with increased luminosity.
-                                    Create a multitude of styles in premium comfort with The Airshot Hair Dryer by CLOUD
-                                    NINE.</p>
-                                <h3><a href="https://www.thehaircaregroup.com/brands/cloud-nine/cloud-nine-alchemy/">CLOUD
-                                        NINE ALCHEMY</a></h3>
-                                <div>
-                                    <p>CLOUD NINE Irons, Wands and Hairdryers set the standard for professional styling
-                                        with two exclusive collections Sericite and Alchemy. One for you, one for your
-                                        clients. CLOUD NINE are transforming their collaboration with the haircare
-                                        industry; in salons with Sericite and at home with Alchemy. Kinder to you.
-                                        Kinder to your clients. Kinder to everyone.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                HOW TO USE
-                            </button>
-                        </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                            <div class="accordion-body">
-                                <ol>
-                                    <li>Before using The Airshot, ensure that the hair is thoroughly towel dried.</li>
-                                    <li>To quickly blast dry hair, use without fixing a nozzle.</li>
-                                    <li>For precision drying, fix either the 60mm or 75mm nozzle.</li>
-                                    <li>When the hair is dry, fix in the style by pressing the Cold Shot Button and
-                                        continue drying the hair for a further 2 minutes.</li>
-                                </ol>
-                            </div>
-                        </div>
-                    </div>
+                    
+                
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-headingThree">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -153,7 +106,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="col-2"></div>
         </div>

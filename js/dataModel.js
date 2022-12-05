@@ -1,14 +1,15 @@
 var products = [ 
     { 
-     "id": 1,
+     "id": 0,
      "name" : 'URBAN ALCHEMY',
      "smallDesc": 'SALT SCRUB CLEANSE SHAMPOO',
      "price" : "$20.0",
      "image":   '../assets/images/scrub-shampoo.png',
      "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-     },
+    'howtouse': 'Before using The Airshot, ensure that the hair is thoroughly towel dried. <br> To quickly blast dry hair, use without fixing a nozzle. <br> For precision drying, fix either the 60mm or 75mm nozzle. <br> When the hair is dry, fix in the style by pressing the Cold Shot Button and continue drying the hair for a further 2 minutes.'
+    },
     { 
-     "id": 2,
+     "id": 1,
      "name" : 'CALMING CONDITIONER',
      "smallDesc": 'SO PURE NATURAL BALANCE',
      "price" : "$23.0",
@@ -16,7 +17,7 @@ var products = [
      "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
      },
     { 
-     "id": 3,
+     "id": 2,
      "name" : '3Deluxe',
      "smallDesc": 'Nutritive Mask',
      "price" : "$50.0",
@@ -24,7 +25,7 @@ var products = [
      "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
      },
     { 
-     "id": 4,
+     "id": 3,
      "name" : '3Deluxe',
      "smallDesc": 'Lakmé Teknia',
      "price" : "$50.0",
@@ -32,7 +33,7 @@ var products = [
      "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
      },
     { 
-     "id": 1,
+     "id": 4,
      "name" : 'URBAN ALCHEMY',
      "smallDesc": 'SALT SCRUB CLEANSE SHAMPOO',
      "price" : "$20.0",
@@ -40,7 +41,7 @@ var products = [
      "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
      },
     { 
-     "id": 2,
+     "id": 5,
      "name" : 'CALMING CONDITIONER',
      "smallDesc": 'SO PURE NATURAL BALANCE',
      "price" : "$23.0",
@@ -48,7 +49,7 @@ var products = [
      "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
      },
     { 
-     "id": 3,
+     "id": 6,
      "name" : '3Deluxe',
      "smallDesc": 'Nutritive Mask',
      "price" : "$50.0",
@@ -56,7 +57,7 @@ var products = [
      "longDesc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
      },
     { 
-     "id": 4,
+     "id": 7,
      "name" : '3Deluxe',
      "smallDesc": 'Lakmé Teknia',
      "price" : "$50.0",

@@ -2,14 +2,19 @@
 function savedTheme(body){
     console.log('saved theme called');
     const theme = localStorage.getItem('theme')
+    console.log('my last theme is '+theme+'')
   
 if(theme){
-   
-    body.classList.add(theme);
+    if(theme == 'light'){
+        console.log('light');
+        body.classList.replace('light','dark');
+    }else{
+        console.log('dark');
+        body.classList.replace('dark','light');
+    }
 }
 }
 function theme(body){
-    
     if(body.classList.contains("light")){
         body.classList.replace('light','dark');
         localStorage.setItem('theme','dark');
@@ -19,11 +24,16 @@ function theme(body){
     }
 }
   
+function navigate(id) {
  
+        url = 'http://127.0.0.1:5500/pages/productdetail.html?id=' + encodeURIComponent(id);
+
+    document.location.href = url;
+}
 function callHomeProducts(){
     for(var i=0;i<4;i++)
     {
-        document.getElementById("cards").innerHTML += '<div class="card card-bg my-3 mx-3" style="width: 18rem;"><img  src="'+products[i].image+'" class="card-img-top " alt="..."><div class="card-body"><h5 class="card-title">'+products[i].name+'</h5><p class="card-text card-subtitle">'+products[i].smallDesc+'</p><p class="card-text" style="color: #bf9456;font-weight: bold; ">'+products[i].price+'</p> <a href="#" class="btn btn-secondary inverted" href="../pages/productdetail.html" style="background-color: #bf9456;">View More</a></div></div>'
+        document.getElementById("cards").innerHTML += '<div onclick="navigate('+products[i].id+')" class="card card-bg my-3 mx-3" style="width: 18rem;"><img  src="'+products[i].image+'" class="card-img-top " alt="..."><div class="card-body"><h5 class="card-title">'+products[i].name+'</h5><p class="card-text card-subtitle">'+products[i].smallDesc+'</p><p class="card-text" style="color: #bf9456;font-weight: bold; ">'+products[i].price+'</p> <a href="#" class="btn btn-secondary inverted" href="../pages/productdetail.html" style="background-color: #bf9456;">View More</a></div></div>'
     }
 }
 function callallProducts(){

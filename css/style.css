@@ -160,7 +160,18 @@ button a{
   border-bottom: 1px solid #bf9456;
   color: #bf9456;
 }
-
+.dropdown a{
+  color:  var(--text-color);
+}
+.dropdown-menu {
+  color:  var(--text-color);
+  background-color: var(--background);
+}
+.dropdown a:hover{
+  border-bottom: 1px solid #bf9456;
+  color: #bf9456;
+  background-color: var(--background);
+}
 /* product area   */
 .productContainer {
   min-height: 60vh;
@@ -430,8 +441,6 @@ footer .content .link-boxes .box {
   opacity: 2s;
   padding-left: 12px;
   color: #ffffff;
-
-
 }
 
 .content .link-boxes .input-box {
