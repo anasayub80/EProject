@@ -12,19 +12,19 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
-<script>
-    savedTheme(document.body)
-</script>
+
 
 <body class="dark">
     <script>
-        $(document).ready(function () {
-            setTimeout(() => {
-                // removeFadeOut(document.getElementById('preloader'), 1000);
-                $('#preloader').fadeToggle("1000");
+        $(document).ready(
+            function () {
+                savedTheme(document.body),
+                    setTimeout(() => {
+                        // removeFadeOut(document.getElementById('preloader'), 1000);
+                        $('#preloader').fadeToggle("1000");
 
-            }, 1000); // after 5 sec it will remove.
-        });
+                    }, 1000); // after 5 sec it will remove.
+            });
     </script>
 
     <!-- <nav class="navbar navbar-expand-lg fixed-top ">
