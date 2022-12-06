@@ -609,7 +609,7 @@ width: 100%;
    width: -webkit-fill-available;
 }
  .choose   {
-  background: rgb(235, 192, 140);;
+  /* background: rgb(235, 192, 140); */
   text-align: center;
   width: -webkit-fill-available;
 }
