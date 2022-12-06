@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap CSS CDN -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/dataModel.js"></script>
+    <script type="text/javascript" src="../js/code.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>HairCare</title>
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        });
+
+    </script>
+
+</head>
+<!-- #BEA5F8 -->
+
+<body class="dark">
+    <!-- Nav Bar  -->
+    <div id="navbar"></div>
+    <!-- Nav Bar  -->
+    <div class="mybutton" onclick="theme(body)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-sun">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </div>
+
+
+    <!-- heading with image Start -->
+    <div id="halfCover" class="container-fluid p-0 text-dark text-center d-block position-relative">
+        <div class="bg position-relative align-items-center"> <img src="../assets/images/banner-img.jpg"
+                id="mainContainer" class="img-fluid" alt="">
+            <h2 class="position-absolute">Hair<span class="primaryColor"> Care</span></h2>
+        </div>
+        <!-- heading with image End -->
+        <!-- Main Area  -->
+        <div class="container-fluid  text-center d-block" id="products">
+            <!-- Gallery Start  -->
+            <div class="container-fluid d-block text-center align-content-center" id="gallery">
+                <br>
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-4">
+                        <h1>Common Instruments</h1>
+                    </div>
+                    <div class="col-4">
+                    </div>
+                </div>
+                <img src="assets/images/dark_seperator.png" alt="" class="img-fluid seprator">
+                <br>
+                <div class="container-gallery">
+                    <div class="popup popup-1 align-content-center justify-content-center" style="color: green;">
+                        <img class="img-responsive popup-img pt-5" alt="Pop Up Gallety"
+                            src="../assets/images/all-purpose-shears.webp" />
+                    </div>
+                    <div class="popup popup-2">
+                        <img class="img-responsive popup-img pt-5" alt="Pop Up Gallety"
+                            src="../assets/images/razor.webp" />
+                    </div>
+                    <div class="popup popup-3">
+                        <img class="img-responsive popup-img pt-5" alt="Pop Up Gallety"
+                            src="../assets/images/brush.webp" />
+                    </div>
+                    <div class="popup popup-4">
+                        <img class="img-responsive popup-img pt-5" alt="Pop Up Gallety"
+                            src="../assets/images/combs.webp" />
+                    </div>
+                    <div class="popup popup-5">
+                        <img class="img-responsive popup-img pt-5" alt="Pop Up Gallety"
+                            src="../assets/images/water.webp" />
+                    </div>
+                </div>
+                <br> <br>
+                <div class="container-gallery">
+                    <div class="popup popup-1 align-content-center justify-content-center" style="color: green;">
+                        <img class="img-responsive popup-img pt-5" alt="Pop Up Gallety" src="../assets/images/dd.png" />
+                    </div>
+                    <div class="popup popup-2">
+                        <img class="img-responsive popup-img pt-5" alt="Pop Up Gallety"
+                            src="../assets/images/blending-shears.webp" />
+                    </div>
+                    <div class="popup popup-3">
+                        <img class="img-responsive popup-img pt-5" alt="Pop Up Gallety"
+                            src="../assets/images/perfect-round-brush.webp" />
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <!-- Gallery End  -->
+        </div>
+        <!-- Footer -->
+        <div id="footer"></div>
+        <!-- Footer -->
+</body>
+
+</html>

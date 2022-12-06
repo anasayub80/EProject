@@ -51,7 +51,8 @@
         var accordionTwo = accordion.innerHTML = '<div class="accordion-item"> <h2 class="accordion-header" id="flush-headingTwo"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"> HOW TO USE </button> </h2> <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample"> <div class="accordion-body px-4"> ' + equipments[data.id].howtouse + '  </div> </div> </div>'
         var accordionThree = accordion.innerHTML = '<div class="accordion-item"> <h2 class="accordion-header" id="flush-headingThree"> <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"> MAINTENANCE </button> </h2> <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample"> <div class="accordion-body px-4">' + equipments[data.id].maintenance + '  </div> </div> </div>'
         var disclaimer = '<br><span style=" color: grey;fontsize:8">Disclaimer: The product information provided is accurate to the best of our knowledge. We rely on materials provided to us by our suppliers. For most accurate information please check the packaging of your product.</span>'
-        mainContiner.innerHTML = '' + brand + title + price + smallDesc + accordionOne + accordionTwo + accordionThree + disclaimer + ''
+        var comparebutton = '<br><br><a  id="comparebutton" href="../pages/compare.html">Compare Equipments</a>'
+        mainContiner.innerHTML = '' + brand + title + price + smallDesc + accordionOne + accordionTwo + accordionThree + disclaimer + comparebutton + ''
     }
 
 
@@ -80,20 +81,13 @@
     <br>
     <div class="container-fluid p-0 d-block my-15">
         <div class="row">
-            <div class="col-2"></div>
-            <div class="col-4 text-center imageContainer">
+            <div class="col-2  col-sm-12"></div>
+            <div class="col-lg-4 mx-5 col-sm-12 text-center imageContainer">
                 <!-- Product Image Will Be Display Here  -->
             </div>
-            <div class="col-4 mainContainer">
-                <!-- 
-        
-                <div class="accordion" id="accordionExample">
-                    
-                
-                    
-                </div> -->
+            <div class="col-lg-4 mx-5 col-sm-12 mainContainer">
             </div>
-            <div class="col-2"></div>
+            <div class="col-lg-2 col-sm-12"></div>
         </div>
     </div>
     <br>

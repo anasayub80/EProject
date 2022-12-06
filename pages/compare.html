@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Boostrap CSS CDN -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/dataModel.js"></script>
+    <script type="text/javascript" src="../js/code.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        });
+
+    </script>
+</head>
+
+<body class="dark">
+    <!-- Nav Bar  -->
+    <div id="navbar"></div>
+    <!-- Nav Bar  -->
+    <div class="mybutton" onclick="theme(body)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-sun">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </div>
+
+
+    <!-----------------------------------  -->
+    <div class="container">
+        <div class="row">
+            <h1 class="display-4 h1 text-center">Compare equipments</h1>
+            <hr>
+            <div class="col-12">
+                <table class="table table-bordered table-responsive table">
+                    <tr>
+                        <th>Select Product</th>
+                        <th>
+                            <select id="select1" class="form-control" onchange="equipments1(this.value)">
+                                <option value="0">----Select Any product--------</option>
+                            </select>
+                        </th>
+                        <th>
+                            <select id="select2" class="form-control" onchange="equipments2(this.value)">
+                                <option value="0">----Select Any product--------</option>
+                            </select>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th>Product Image</th>
+                        <td><img src="https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg"
+                                id="img1" width="200" height="200"></td>
+                        <td><img src="https://thumbs.dreamstime.com/b/no-image-available-icon-flat-vector-no-image-available-icon-flat-vector-illustration-132482953.jpg"
+                                id="img2" width="200" height="200"></td>
+                    </tr>
+                    <tr>
+                        <th>Product Name</th>
+                        <td id="title1">N/A</td>
+                        <td id="title2">N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Product Brand</th>
+                        <td id="br1">N/A</td>
+                        <td id="br2">N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Product Price</th>
+                        <td id="pr1">N/A</td>
+                        <td id="pr2">N/A</td>
+                    </tr>
+                    <tr>
+                        <th>Product Description</th>
+                        <td id="desc1">N/A</td>
+                        <td id="desc2">N/A</td>
+                    </tr>
+
+
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="JS/data.js"></script>
+    <script>
+        for (var i = 1; i < equipments.length; i++) {
+            document.getElementById("select1").innerHTML += `
+            <option value="${i}">${equipments[i].title}</option>           
+            `
+            document.getElementById("select2").innerHTML += `
+            <option value="${i}">${equipments[i].title}</option>               
+            `
+        }
+        function equipments1(a) {
+            var s2 = document.getElementById("select2").value;
+            if (a != s2) {
+                document.getElementById("img1").src = equipments[a].image;
+                document.getElementById("title1").innerHTML = equipments[a].title;
+                document.getElementById("br1").innerHTML = equipments[a].brand;
+                document.getElementById("pr1").innerHTML = equipments[a].price;
+                document.getElementById("desc1").innerHTML = equipments[a].smallDesc;
+            }
+            else {
+                document.getElementById("select1").selectedIndex = 0;
+                document.getElementById("img1").src = equipments[0].image;
+                document.getElementById("title1").innerHTML = "";
+                document.getElementById("br1").innerHTML = "";
+                document.getElementById("pr1").innerHTML = "";
+                document.getElementById("desc1").innerHTML = "";
+            }
+
+        }
+        function equipments2(a) {
+            var s1 = document.getElementById("select1").value;
+            if (a != s1) {
+                document.getElementById("img2").src = equipments[a].image;
+                document.getElementById("title2").innerHTML = equipments[a].title;
+                document.getElementById("br2").innerHTML = equipments[a].brand;
+                document.getElementById("pr2").innerHTML = equipments[a].price;
+                document.getElementById("desc2").innerHTML = equipments[a].smallDesc;
+            }
+            else {
+                document.getElementById("select2").selectedIndex = 0;
+                document.getElementById("img2").src = equipments[0].image;
+                document.getElementById("title2").innerHTML = "";
+                document.getElementById("br2").innerHTML = "";
+                document.getElementById("pr2").innerHTML = "";
+                document.getElementById("desc2").innerHTML = "";
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>
