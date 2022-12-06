@@ -58,13 +58,13 @@ function callallProducts(){
 function callHomeEquipments(){
     for(var i=0;i<4;i++)
     {
-        document.getElementById("equipment-home-cards").innerHTML += '<div onclick="navigateEquipments('+equipments[i].id+')" class="card card-bg my-3 mx-3" style="width: 18rem;"><img src="'+equipments[i].image+'" class="card-img-top " alt="..."><div class="card-body"><h5 class="card-title">'+equipments[i].title+'</h5><p class="card-text card-subtitle">'+equipments[i].smallDesc+'</p><p class="card-text" style="color: #bf9456;font-weight: bold; ">'+equipments[i].price+'</p> <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a></div></div>'
+        document.getElementById("equipment-home-cards").innerHTML += '<div onclick="navigateEquipments('+equipments[i].id+')" class="card card-bg my-3 mx-3" style="width: 18rem;"><img src="'+equipments[i].image+'" class="card-img-top " alt="..."><div class="card-body"><h5 class="card-title">'+equipments[i].title+'</h5><p class="card-text card-subtitle">'+equipments[i].smallDesc+'</p><p class="card-text" style="color: #bf9456;font-weight: bold; ">'+equipments[i].price+'</p> <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">View More</a></div></div>'
     }
 }
 function callallEquipments(){
     for(var i=0;i<equipments.length;i++)
     {
-        document.getElementById("equipment-cards").innerHTML += '<div onclick="navigateEquipments('+equipments[i].id+')" class="card card-bg my-3 mx-3" style="width: 18rem;"><img src="'+equipments[i].image+'" class="card-img-top " alt="..."><div class="card-body"><h5 class="card-title">'+equipments[i].title+'</h5><p class="card-text card-subtitle">'+equipments[i].smallDesc+'</p><p class="card-text" style="color: #bf9456;font-weight: bold; ">'+equipments[i].price+'</p> <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">Go somewhere</a></div></div>'
+        document.getElementById("equipment-cards").innerHTML += '<div onclick="navigateEquipments('+equipments[i].id+')" class="card card-bg my-3 mx-3" style="width: 18rem;"><img src="'+equipments[i].image+'" class="card-img-top " alt="..."><div class="card-body"><h5 class="card-title">'+equipments[i].title+'</h5><p class="card-text card-subtitle">'+equipments[i].smallDesc+'</p><p class="card-text" style="color: #bf9456;font-weight: bold; ">'+equipments[i].price+'</p> <a href="#" class="btn btn-secondary" style="background-color: #bf9456;">View More</a></div></div>'
     }
 }
 function callHomeremedies(){

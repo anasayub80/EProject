@@ -563,7 +563,12 @@ width: 100%;
     font-size: 28px;
   } 
 }
-
+/* Latest Developement  */
+#About-d {
+  background-color: var(--card-color);
+  color: var(--text-color);
+}
+/* Latest Developement  */
 /* Accordion */
 .accordion-body {
   color: var(--text-color);
