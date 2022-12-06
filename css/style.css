@@ -25,6 +25,16 @@
   text-decoration: none;
   
  }
+ 
+body {
+  /* Hide horizontal scrollbar */
+  overflow-x: hidden;
+  max-width: 100%;
+  /* Hide horizontal scrollbar */
+  background-color: var(--background);
+  color: var(--text-color);
+  transition: background 300ms ease-in,color 600ms ease-in-out;
+}
  .card {
   position: relative;
   display: flex;
@@ -47,13 +57,6 @@
 }
 
 
-body {
-  overflow-x: hidden;
-  /* Hide horizontal scrollbar */
-  background-color: var(--background);
-  color: var(--text-color);
-  transition: background 300ms ease-in,color 600ms ease-in-out;
-}
 .mybutton {
   position: fixed;
   background-color: #bf9456;
@@ -105,7 +108,15 @@ button a{
   color: #bf9456;
 }
 #smallImg img{width:100%}
-
+h1{
+  color: var(--text-color);
+}
+h2{
+  color: var(--text-color);
+}
+p{
+  color: var(--text-color);
+}
  
 #cover {
   position: relative;
@@ -705,6 +716,7 @@ input:focus, textarea:focus, keygen:focus, select:focus {
   color: var(--text-color);
   font-weight: normal;
 }
+ 
 
 .section2 {
     width: 1200px;
@@ -1004,4 +1016,114 @@ color: #878787;
 .accordion-button:not(.collapsed) {
   color: var(--text-color);
   background-color: var(--card-color);
+}
+
+/* hair causes  */
+/** choose  section **/
+
+
+.primaryColor {
+  color: #bf9456;
+}
+
+ .choose_box {
+  background: var(--background);
+   text-align: center;
+   width: -webkit-fill-available;
+}
+ .choose   {
+  background: rgb(235, 192, 140);;
+  text-align: center;
+  width: -webkit-fill-available;
+}
+
+  .choose_box span {
+  color: var(--text-color);
+  display: block;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+}
+
+ .choose_box h3 {
+  color: #00aeef;
+  font-size: 25px;
+  line-height: 28px;
+  font-weight: 500;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+
+.choose .choose_box p {
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 500;
+}
+
+ 
+ 
+
+ 
+
+/** end choose  section **/
+
+
+/** hairtreatments section **/
+
+.hairtreatments {
+   padding: 90px 0;
+}
+
+.hairtreatments .titlepage {
+  text-align: left;
+  padding: 0;
+  max-width: 648px;
+  width: 100%;
+  float: right;
+}
+
+.hairtreatments .titlepage h2 {
+  color: var(--text-color);
+ }
+.hairtreatments .titlepage p {
+  color: var(--text-color);
+  font-size: 17px;
+  line-height: 35px;
+  font-weight: 400;
+  padding-bottom: 50px;
+}
+.hairtreatments_img {
+  padding-right: 30px;
+}
+.hairtreatments_img figure {
+  margin: 0;
+}
+
+
+/** end hairtreatments section **/
+
+/* Our Brands  */
+.dark .brand-image{
+  filter: invert(1)!important;  
+}
+.light .brand-image{
+  filter:  none!important; 
+}
+
+.brand-card{
+  display: inline;
+  background-color: var(--card-color);
+  height: 175px;
+  width: fit-content;
+}
+.brand-card:hover{
+  cursor: pointer;
+  box-shadow: 0px 5px 15px #bf9456;
+  border: 2px solid #bf9456;
+  -webkit-transition: .2s;
+  transition: .2s;
+  -webkit-transform: translateZ(5px) translateY(-20px) scale(1.05);
+  transform: translateZ(5px) translateY(-20px) scale(1.05);
+ margin-top: 50px;
 }

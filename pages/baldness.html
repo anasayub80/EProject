@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Boostrap CSS CDN -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Box Icons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
+    <!-- JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../js/dataModel.js"></script>
+    <script type="text/javascript" src="../js/code.js"></script>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>HairCare</title>
+    <script>
+        $(function () {
+            $("#navbar").load("../components/navbar.html");
+            $("#footer").load("../components/footer.html");
+        });
+
+    </script>
+
+</head>
+<!-- #BEA5F8 -->
+
+<body class="dark">
+    <!-- Nav Bar  -->
+    <div id="navbar"></div>
+    <!-- Nav Bar  -->
+    <div class="mybutton" onclick="theme(body)">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="feather feather-sun">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </div>
+
+
+    <!-- heading with image Start -->
+    <div id="halfCover" class="container-fluid p-0 text-dark text-center d-block position-relative">
+        <div class="bg position-relative align-items-center"> <img src="../assets/images/bald.jpg" id="mainContainer"
+                class="img-fluid" alt="">
+            <h1 class="position-absolute">Hair <span class="primaryColor">Baldness</span></h1>
+
+        </div>
+        <!-- heading with image End -->
+        <!-- Main Area  -->
+        <div class="container-fluid  text-center d-block" id="products">
+            <br>
+            <img src="../assets/images/dark_seperator.png" alt="" class="img-fluid seprator"> <br>
+            <br>
+            <div class="row justify-content-center text-center">
+                <div class="col-2 col-sm-12"></div>
+                <div class="col-lg-4 col-sm-12 my-auto">
+                    <h1>Hair Baldness</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed libero harum accusamus eius,
+                        obcaecati laboriosam nisi deleniti sunt minus nesciunt officiis, quibusdam nostrum totam Lorem
+                        ipsum dolor sit amet consectetur adipisicing elit. Sed libero harum accusamus eius,
+                        obcaecati laboriosam nisi deleniti sunt minus nesciunt officiis, quibusdam nostrum totam </p>
+                </div>
+                <div class="col-lg-4 col-sm-12 py-5 px-5 m-10">
+                    <div>
+                        <img src="../assets/images/bl.jpg" class="img-fluid" alt="">
+
+                    </div>
+                </div>
+                <div class="col-2 col-sm-12"></div>
+            </div>
+            <div class="choose py-3">
+                <h2>Identify Your Hair Baldness Causes <h2>
+                        <div class="container-fluid p-0 m-0">
+                            <div class="row">
+                                <div class="col-3"></div>
+                                <div class="col-6">
+                                    <div class="choose_box card p-5 m-5">
+                                        <i><img src="/assets/images/png hl.png" width="120" /></i>
+                                        <h3>Diagnosis Test</h3>
+                                        <p>Before making a diagnosis, your doctor will likely give you a physical
+                                            exam and ask about
+                                            your diet, your hair care routine, and your medical and family history.
+                                            You might also
+                                            have tests, such as the following <br><br>
+
+                                            <span style="font-size: 1.5rem; float: left;">Blood test:</span> This
+                                            might help uncover
+                                            medical conditions that can cause hair Baldness.
+                                            Pull test. Your doctor gently pulls several dozen hairs to see how many
+                                            come out. This
+                                            helps determine the stage of the shedding process. <br><br>
+
+                                            <span style="font-size: 1.5rem; float: left;">Scalp biopsy:</span>Your
+                                            doctor scrapes
+                                            samples from the skin or from a few hairs plucked from the scalp to
+                                            examine the hair roots
+                                            under a microscope. This can help determine whether an infection is
+                                            causing hair
+                                            loss.<br><br>
+                                            <span style="font-size: 1.5rem; float: left;">Light
+                                                microscopy:</span>Your doctor uses a
+                                            special instrument to examine hairs trimmed at their bases. Microscopy
+                                            helps uncover
+                                            possible disorders of the hair shaft.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-3"></div>
+                            </div>
+                        </div>
+            </div>
+            <div id="hairtreatments" class="hairtreatments" style>
+                <div class="container-fluid">
+                    <div class="row d_flex">
+                        <div class="col-md-7">
+                            <div class="titlepage">
+                                <h1>Hair <span class="primaryColor">Baldness</span> Treatment</h1>
+                                <br>
+                                <h2>How to regrow: </h2>
+                                <p>In many cases, treatments are available to help regrow hair on a bald spot or thicken
+                                    up hair growth where thinning has occurred.</p>
+
+                                <p style="font-size: 3rem;">Rosemary Oil:</p>
+                                <p> Rosemary oil has anti-inflammatory properties and helps improve circulation, so it’s
+                                    a natural choice for treating hair loss.
+                                    Rub a small amount gently on your bald spot each night or consider using natural
+                                    shampoo containing rosemary oil
+                                </p>
+                                <p style="font-size: 3rem;">Aloe Vera:</p>
+                                <p> Aloe vera is usually thought of as a skin treatment for wound healing and burn
+                                    relief. But aloe vera may also help regrow hair and protect the scalp from disease.
+                                    The Journal of Chemical and Pharmaceutical Research notes that aloe vera’s
+                                    anti-inflammatory properties and many enzymes, minerals, and other healthy
+                                    ingredients make it a safe and, often, effective hair growth treatment.
+                                    To use it, massage it into your scalp before shampooing your hair. Try mixing it
+                                    with wheat germ oil and coconut milk.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="work_img">
+                                <figure><img src="../assets/images/baldCircle.webp" alt="#" width="430"
+                                        style="margin-left: 60px;"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div id="footer"></div>
+        <!-- Footer -->
+</body>
+
+</html>
