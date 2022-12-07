@@ -13,7 +13,7 @@
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
     <script src="/js/frist.js"></script>
     <script type="text/javascript" src="../js/code.js"></script>
     <!-- Main CSS -->
@@ -26,6 +26,40 @@
         $("#navbar").load("../components/navbar.html");
         $("#footer").load("../components/footer.html");
     });
+
+    function validation() {
+        var u = document.getElementById("uname").value;
+        var e = document.getElementById("email").value;
+        var m = document.getElementById("msg").value;
+        //Regular Expression(form validation)
+        var usercheck = /^[a-zA-Z. ]{3,30}$/;
+        var emailcheck = /^[a-zA-Z_.]{3,}@[a-zA-Z]{3,}[.]{1}[a-zA-Z.]{2,6}$/;;
+        var msgcheck = /^[A-Za-z0-9.!@#$%^&*? ]{10,500}$/;
+        if (usercheck.test(u)) {
+            document.getElementById("usererror").innerHTML = ""
+        }
+        else {
+            document.getElementById("usererror").innerHTML = "Invalid User Name";
+            return false;
+        }
+        if (emailcheck.test(e)) {
+            document.getElementById("emailerror").innerHTML = ""
+        }
+        else {
+            document.getElementById("emailerror").innerHTML = "Invalid Email";
+            return false;
+        }
+        if (msgcheck.test(m)) {
+            document.getElementById("msgerror").innerHTML = ""
+        }
+        else {
+            document.getElementById("msgerror").innerHTML = "Your messag must contain 10 to 500 words";
+            return false;
+        }
+
+        window.open(`mailto:${e}?body=${m}`);
+
+    }
 </script>
 
 <body class="dark">
@@ -71,19 +105,17 @@
                 </div>
                 <div class="sec2contactform">
                     <h3 class="sec2frmtitle">Connect With Us ;)</h3>
-                    <form action="">
-                        <div class="clearfix">
-                            <input class="col2 first" type="text" placeholder="FirstName">
-                            <input class="col2 last" type="text" placeholder="LastName">
-                        </div>
-                        <div class="clearfix">
-                            <input class="col2 first" type="Email" placeholder="Email">
-                            <input class="col2 last" type="text" placeholder="Contact Number">
-                        </div>
-                        <div class="clearfix">
-                            <textarea class="" name="textarea" id="" cols="30" rows="7">Your message here....</textarea>
-                        </div>
-                        <div class="btnDiv"><input type="submit" value="Send"></div>
+                    <form action="contactus.html" class="my-5" onsubmit="return validation()">
+                        <label class="form-label">User Name: <span class="text-danger">*</span><span id="usererror"
+                                class="text-danger"></span> </label> <br>
+                        <input type="text" placeholder="Enter User Name" id="uname" class="form-control"><br>
+                        <label class="form-label">Email:<span class="text-danger">*</span><span id="emailerror"
+                                class="text-danger"></span></label> <br>
+                        <input type="email" placeholder="anything@gmail.com" id="email" class="form-control"> <br>
+                        <label class="form-label">Your Message Here:<span class="text-danger">*</span><span
+                                id="msgerror" class="text-danger"></span> </label> <br>
+                        <textarea name="" id="msg" cols="30" rows="10" class="form-control"></textarea> <br>
+                        <button class="sendBTN" class="btn btn-outline">Submit</button>
                     </form>
                 </div>
 

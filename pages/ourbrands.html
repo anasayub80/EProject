@@ -14,7 +14,7 @@
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
     <!-- JS -->
     <script src="../js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/jquery-3.6.1.min.js"></script>
 
     <script type="text/javascript" src="../js/dataModel.js"></script>
     <script type="text/javascript" src="../js/code.js"></script>
@@ -25,27 +25,7 @@
             $("#navbar").load("../components/navbar.html");
             $("#footer").load("../components/footer.html");
         });
-        function onbrandClick(name) {
 
-
-            let countInvalidEntries = 0
-
-            function filterById(obj) {
-                if (obj.brand.includes(name)) {
-
-                }
-
-            }
-
-            let arrayById = array.filter(filterById);
-
-            console.log('Filtered Array with non-zero and numeric id: \n',
-                arrayById);
-
-            console.log('Number of Invalid Entries = ', countInvalidEntries);
-
-
-        }
     </script>
     <title>Document</title>
 
@@ -85,23 +65,20 @@
             <br>
             <div style="width: 75%; " class="m-auto">
                 <div class="row d-flex justify-content-center">
-                    <div onclick="onbrandClick('Diva')" class="brand-card pt-2 m-3">
-                        <img class="brand-image" height="150" width="150" src="../assets/images/logo-diva.png" alt="">
-                    </div>
                     <div onclick="onbrandClick('360')" class="brand-card pt-2 m-3">
                         <img class="brand-image" src="../assets/images/logo-360.svg" alt="">
                     </div>
-                    <div onclick="onbrandClick('3Deluxe')" class="brand-card pt-2 m-3">
+                    <div onclick="onbrandClick('3DELUXE')" class="brand-card pt-2 m-3">
                         <img class="brand-image" src="../assets/images/logo-3deluxe.svg" alt="">
                     </div>
-                    <div onclick="onbrandClick('Color Wow')" class="brand-card pt-2 m-3">
+                    <div onclick="onbrandClick('EVO')" class="brand-card pt-2 m-3">
+                        <img class="brand-image" src="../assets/images/logo-evo.svg" alt="">
+                    </div>
+                    <div onclick="onbrandClick('COLOR WOW')" class="brand-card pt-2 m-3">
                         <img class="brand-image" src="../assets/images/logo-colorwow.svg" alt="">
                     </div>
                     <div onclick="onbrandClick('Denman')" class="brand-card pt-2 m-3">
                         <img class="brand-image" src="../assets/images/logo-denman.svg" alt="">
-                    </div>
-                    <div onclick="onbrandClick('EVO')" class="brand-card pt-2 m-3">
-                        <img class="brand-image" src="../assets/images/logo-evo.svg" alt="">
                     </div>
                     <div onclick="onbrandClick('Jackdean')" class="brand-card pt-2 m-3">
                         <img class="brand-image" src="../assets/images/logo-jackdean.svg" alt="">

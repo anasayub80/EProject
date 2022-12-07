@@ -23,7 +23,27 @@ function theme(body){
         localStorage.setItem('theme','light');
     }
 }
+function filterBrand(){
+    var url = document.location.href,
+    params = url.split('?')[1].split('&'),
+    data = {}, tmp;
+            for (var i = 0, l = params.length; i < l; i++) {
+                tmp = params[i].split('=');
+                data[tmp[0]] = tmp[1];
+            }
+    for(var i=0;i<products.length;i++)
+    {
+        console.log("brand "+ data.id)
+        if(products[i].brand == data.id){
+            document.getElementById("brand-cards").innerHTML += '<div onclick="navigate('+products[i].id+')" class="card card-bg my-3 mx-3" style="width: 18rem;"><img  src="'+products[i].image+'" class="card-img-top " alt="..."><div class="card-body"><h5 class="card-title">'+products[i].title+'</h5><p class="card-text card-subtitle">'+products[i].smallDesc+'</p><p class="card-text" style="color: #BF9456;font-weight: bold; ">'+products[i].price+'</p> <a href="#" class="btn btn-secondary inverted" style="background-color: #BF9456;">View More</a></div></div>'
+        }
+     }
+}
   
+function onbrandClick(id) {
+        url = 'http://127.0.0.1:5500/pages/brandproduct.html?id=' + encodeURIComponent(id);
+    document.location.href = url;
+}
 function navigate(id) {
  
         url = 'http://127.0.0.1:5500/pages/productdetail.html?id=' + encodeURIComponent(id);

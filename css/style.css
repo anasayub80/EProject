@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
 :root{
   --background: #fff;
   --text-color: #333;
@@ -23,7 +24,6 @@
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
   text-decoration: none;
-  
  }
  
 body {
@@ -34,6 +34,9 @@ body {
   background-color: var(--background);
   color: var(--text-color);
   transition: background 300ms ease-in,color 600ms ease-in-out;
+}
+.customHeading{
+  font-family: 'Kalam', cursive;
 }
  .card {
   position: relative;
@@ -398,28 +401,20 @@ background-color: var(--primary-color);
 }
 
 /* Contact Us  */
-.btnDiv{
-  align-items: center;
+.sendBTN {
+   background-color: var(--primary-color);
+   color: var(--text-color);
+   padding: 10px 45px;
+   border-radius: 16px;
 }
 input:focus, textarea:focus, keygen:focus, select:focus {
   outline: none;
 }
-::-moz-placeholder {
-  color: #666;
-  font-weight: 300;
-  opacity: 1;
-}
-
-::-webkit-input-placeholder {
-  color: #666;
-  font-weight: 300;
-}
+ 
 
 
 /* Contact Form Styling */
-.container {
-  padding: 0 50px 70px;
-}
+ 
 .textcenter {
   text-align: center;
 }
@@ -707,6 +702,14 @@ width: 100%;
 
 
 /* footer  */
-.footer{
-  background: var(--card-color);
+.footerContainer{
+  background: var(--card-color);color: var(--text-color);
+}
+.footerContainer a{
+  text-decoration: underline;
+ color: var(--text-color);
+}
+.footerContainer h6, .p-3{
+  
+ color: var(--text-color);
 }
